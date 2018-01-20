@@ -81,7 +81,7 @@ void atrinkti(Rezai Ga[] ,Gatve1 G1[], Gatve2 G2[], int n, int m, int x, int z, 
 		Ga[a].pav = G1[i].pav;
 		Ga[a].km = G1[i].km;
 		Ga[a].sk = G1[i].sk;
-		a++;
+		a--;
 	}
 }
 	for(int i = 0; i < m; i++)
@@ -91,7 +91,7 @@ void atrinkti(Rezai Ga[] ,Gatve1 G1[], Gatve2 G2[], int n, int m, int x, int z, 
 		Ga[a+b].pav = G2[i].pav;
 		Ga[a+b].km = G2[i].km;
 		Ga[a+b].sk = G2[i].sk;
-		b++;
+		b--;
 	}
 }
 ilgis = a + b;
@@ -107,9 +107,9 @@ void rikiuoti(Rezai Ga[], int ilgis)
 		i = i + 1;
 		for(int j = ilgis - 1; j > i - 1; j--)
 		{
-			if(Ga[j].km < Ga[j - 1].km)
+			if(Ga[j].km > Ga[j - 1].km)
 			{
-				bk = true;
+				bk = false;
 		
 				d = Ga[j].sk;
 				c = Ga[j].km;
