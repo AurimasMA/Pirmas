@@ -1,0 +1,4 @@
+egliu   5  5
+miesto   9  9
+liepu   10  3
+Aleju   10  9

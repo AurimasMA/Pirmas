@@ -1,0 +1,5 @@
+svencionys
+3
+Berzu 12 5
+liepu 10 3
+egliu 5 5
